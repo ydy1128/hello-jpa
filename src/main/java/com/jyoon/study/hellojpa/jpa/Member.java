@@ -17,4 +17,9 @@ public class Member {
     private String username;
     @Getter @Setter
     private Integer age;
+
+    @Override
+    public String toString() {
+        return "Member[id="+id+", username="+username+", age="+age+"]";
+    }
 }
