@@ -19,5 +19,7 @@ public class MemberServiceImpl implements MemberService {
     }
 
     @Override
-    public void saveMember(Member member) throws Exception {}
+    public void saveMember(Member member) throws Exception {
+        memberRepository.save(member);
+    }
 }
